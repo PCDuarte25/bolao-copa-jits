@@ -1,0 +1,40 @@
+<div class="container p-3 border rounded shadow bg-light bg-gradient" style="max-width: 550px">
+  <div class="align-items-center row-align-items-center">
+
+    <div class="text-center">
+      <img src="../../../assets/logo-bolao.png" alt="Logo" class="mb-3" width="400px" height="400px">
+    </div>
+
+    <form class="w-75 m-auto">
+
+      <label for="inpAvatar" class="form-label fw-bold">Avatar</label>
+      <input type="file" id="inpAvatar" class="form-control mb-3">
+
+      <div class="input-group mb-3">
+        <button class="btn btn-success"><fa-icon [icon]="faUser"></fa-icon></button>
+        <input type="text" id="inpUsername" class="form-control text-center" placeholder="Usuário">
+      </div>
+
+      <div class="input-group mb-3">
+        <button class="btn btn-success"><fa-icon [icon]="faLock"></fa-icon></button>
+        <input type="password" id="inpPassword" class="form-control text-center" placeholder="Senha">
+      </div>
+
+      <div class="input-group mb-3">
+        <button class="btn btn-success"><fa-icon [icon]="faLock"></fa-icon></button>
+        <input type="password" id="inpConfirmPassword" class="form-control text-center" placeholder="Confirmar senha">
+      </div>
+
+      <div class="btn-group mb-3 w-100">
+        <input type="radio" class="btn-check" id="genderMale" autocomplete="off" checked>
+        <label for="genderMale" class="btn btn-success"><fa-icon [icon]="faCheck"></fa-icon>&nbsp;Masculino</label>
+
+        <input type="radio" class="btn-check" id="genderFemale" autocomplete="off">
+        <label for="genderFemale" class="btn btn-success">Feminino</label>
+      </div>
+
+      <button type="submit" class="btn btn-warning w-100">Cadastrar</button>
+    </form>
+
+  </div>
+</div>
