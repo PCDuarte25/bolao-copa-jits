@@ -29,12 +29,14 @@
       </div>
 
       <div class="btn-group mb-3 w-100">
-        <input type="radio" class="btn-check" id="genderMale" autocomplete="off" checked formControlName="gender">
+        <input type="radio" class="btn-check" id="genderMale" name="gender" value="m" autocomplete="off"
+          formControlName="gender">
         <label for="genderMale" class="btn btn-success">
           <fa-icon [icon]="faCheck"></fa-icon>&nbsp;Masculino
         </label>
 
-        <input type="radio" class="btn-check" id="genderFemale" autocomplete="off">
+        <input type="radio" class="btn-check" id="genderFemale" name="gender" value="f" autocomplete="off"
+          formControlName="gender">
         <label for="genderFemale" class="btn btn-success">Feminino</label>
       </div>
 
