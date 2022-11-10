@@ -23,6 +23,7 @@ export class SignupComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.form.get("gender")?.valueChanges.subscribe(result => console.log("Estado do radio button mudou para: " + result));
   }
 
   onSubmit() {
