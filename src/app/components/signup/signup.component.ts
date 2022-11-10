@@ -26,7 +26,7 @@ export class SignupComponent implements OnInit {
   }
 
   onSubmit() {
-    this.service.save(this.form.value).subscribe(result => console.log(result));
+    this.service.saveSignup(this.form.value).subscribe(result => console.log(result));
   }
 
   faUser = faUser;
