@@ -7,11 +7,17 @@ import { HttpClient } from '@angular/common/http';
 })
 export class JitsService {
 
-  private readonly API = 'api/signup';
+  private readonly APISignup = 'api/signup';
+
+  private readonly APILogin = 'api/login';
 
   constructor(private httpClient: HttpClient) { }
 
-  save(record: User) {
-    return this.httpClient.post<User>(this.API, record);
+  saveSignup(record: User) {
+    return this.httpClient.post<User>(this.APISignup, record);
+  }
+
+  saveLogin(record: User) {
+    return this.httpClient.post<User>(this.APILogin, record);
   }
 }
