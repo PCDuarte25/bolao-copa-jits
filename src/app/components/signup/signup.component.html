@@ -5,31 +5,25 @@
       <img src="../../../assets/logo-bolao.png" alt="Logo" class="mb-3" width="400px" height="400px">
     </div>
 
-    <form class="w-75 m- auto" [formGroup]="form">
+    <form class="w-75 m-auto" [formGroup]="form">
 
       <label for="inpAvatar" class="form-label fw-bold">Avatar</label>
       <input type="file" id="inpAvatar" class="form-control mb-3" formControlName="avatar">
 
       <div class="input-group mb-3">
-        <button class="btn btn-success">
-          <fa-icon [icon]="faUser"></fa-icon>
-        </button>
+        <fa-icon class="btn btn-success" [icon]="faUser"></fa-icon>
         <input type="text" id="inpUsername" class="form-control text-center" placeholder="Usuário"
           formControlName="username">
       </div>
 
       <div class="input-group mb-3">
-        <button class="btn btn-success">
-          <fa-icon [icon]="faLock"></fa-icon>
-        </button>
+        <fa-icon class="btn btn-success" [icon]="faLock"></fa-icon>
         <input type="password" id="inpPassword" class="form-control text-center" placeholder="Senha"
           formControlName="password">
       </div>
 
       <div class="input-group mb-3">
-        <button class="btn btn-success">
-          <fa-icon [icon]="faLock"></fa-icon>
-        </button>
+        <fa-icon class="btn btn-success" [icon]="faLock"></fa-icon>
         <input type="password" id="inpConfirmPassword" class="form-control text-center" placeholder="Confirmar senha"
           formControlName="passwordConfirm">
       </div>
