@@ -9,12 +9,14 @@
       <form>
         <div class="input-group mb-3">
           <fa-icon class="btn btn-success" [icon]="faUser"></fa-icon>
-          <input type="text" id="inpUsername" class="form-control text-center" placeholder="Usuário">
+          <input type="text" id="inpUsername" class="form-control text-center" placeholder="Usuário"
+            formControlName="username">
         </div>
 
         <div class="input-group mb-3">
           <fa-icon class="btn btn-success" [icon]="faLock"></fa-icon>
-          <input type="password" id="inpPassword" class="form-control text-center" placeholder="Senha">
+          <input type="password" id="inpPassword" class="form-control text-center" placeholder="Senha"
+            formControlName="password">
         </div>
 
         <button type="submit" class="btn btn-warning w-100 mb-3">Entrar</button>
